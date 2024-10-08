@@ -28,10 +28,41 @@ a#procesar-pedido {
     flex: 0 0 50%;
     max-width: 50%;
 }
-#dropdown01{
-    background-color: #ffffff00;
-   
-}
+
 #carrito {
     transform: translateX(0);
+  }     
+  .btn {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  #carrito {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #carrito table {
+    margin-bottom: 1rem;
+  }
+  
+  #carrito th {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem;
+  }
+  
+  #carrito td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+  } 
+  
+  #vaciar-carrito, #procesar-pedido {
+    margin-top: 1rem;
   }
