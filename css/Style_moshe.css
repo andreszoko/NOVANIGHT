@@ -29,7 +29,13 @@ a#procesar-pedido {
     max-width: 50%;
 }
 #dropdown01{
+<<<<<<< Updated upstream
     background-color: #d4d4d4;
     list-style-position: unset;
 }
     
+=======
+    background-color: black;
+   
+}
+>>>>>>> Stashed changes
