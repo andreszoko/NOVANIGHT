@@ -28,3 +28,8 @@ a#procesar-pedido {
     flex: 0 0 50%;
     max-width: 50%;
 }
+#dropdown01{
+    background-color: #d4d4d4;
+    list-style-position: unset;
+}
+    
