@@ -13,13 +13,13 @@ a#procesar-pedido {
 }
 
 .bg-dark {
-    background-color: #2098b6 !important;
+    background-color:   #a8dbf0 !important;
 }
 
 .navbar-nav .dropdown-menu {
     position: static;
     float: none;
-    background-color: #d4d4d4 !important;
+    background-color: #eee9e9 !important;
 }
 
 .col-sm-6 {
@@ -29,7 +29,9 @@ a#procesar-pedido {
     max-width: 50%;
 }
 #dropdown01{
-    background-color: #d4d4d4;
-    list-style-position: unset;
+    background-color: #ffffff00;
+   
 }
-    
+#carrito {
+    transform: translateX(0);
+  }
