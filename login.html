@@ -1,36 +1,75 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/popper.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="css/sweetalert2.min.css">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Bienvenido a mi Formulario</title>
 </head>
-<body>
-    <div class="container">
-        <form id="login-form" class="form">
-            <h2>Login</h2>
-            <input type="email" placeholder="Correo Electrónico" required>
-            <input type="password" placeholder="Contraseña" required>
-            <button type="submit">Iniciar Sesión</button>
-            <p>¿No tienes cuenta? <a href="#" id="show-register">Regístrate</a></p>
-        </form>
 
-        <form id="register-form" class="form" hidden>
-            <h2>Registro</h2>
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Correo Electrónico" required>
-            <input type="password" placeholder="Contraseña" required>
-            <button type="submit">Registrarse</button>
-            <p>¿Ya tienes cuenta? <a href="#" id="show-login">Inicia Sesión</a></p>
+<body>
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido a NOVANIGHT</h2>
+                <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+                <button class="sign-up-btn">Iniciar Sesion</button>
+            </div>
+        </div>
+        <form class="formulario">
+            <h2 class="create-account">Crear una cuenta</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">Crear una cuenta gratis</p>
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Contraseña">
+            <input type="button" value="Registrarse">
         </form>
     </div>
-
-    <script src="script.js"></script>
+    <div class="container-form sign-in">
+        <form class="formulario">
+            <h2 class="create-account">Iniciar Sesion</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Contraseña">
+            <input type="button" value="Iniciar Sesion">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script_login.js"></script>
 </body>
+
 </html>
