@@ -1,121 +1,52 @@
-a#vaciar-carrito {
-    background-color: #c91717;
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-a#procesar-pedido {
-    background-color: #168300;
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: #b05be9;
-    border-color: #6a00f5;
+header nav {
+  background-color: #333;
+  padding: 1em;
 }
 
-.bg-dark {
-    background-color:   #a8dbf0 !important;
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.navbar-nav .dropdown-menu {
-    position: static;
-    float: none;
-    background-color: #eee9e9 !important;
+header nav ul li {
+  margin-right: 20px;
 }
 
-.col-sm-6 {
-    text-align: right;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
+header nav a {
+  color: #fff;
+  text-decoration: none;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+main h1 {
+  font-size: 36px;
+}
 #carrito {
-    transform: translateX(0);
-  }     
-  .btn {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.2s ease;
-  }
-  
-  .btn:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  #carrito {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 0.25rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  #carrito table {
-    margin-bottom: 1rem;
-  }
-  
-  #carrito th {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #ddd;
-    padding: 0.5rem;
-  }
-  
-  #carrito td {
-    padding: 0.5rem;
-    border-bottom: 1px solid #ddd;
-  } 
-  
-  #vaciar-carrito, #procesar-pedido {
-    margin-top: 1rem;
-  }
-  main {
-    padding: 2rem;
-  }
-  body {
-    background-image: linear-gradient(to bottom, #f2f2f2, #fff);
-    background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0;
-  }
-  .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  
-  .footer h5 {
-    font-weight: bold;
-    margin-top: 0;
-  }
-  
-  .footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer li {
-    margin-bottom: 1rem;
-  }
-  
-  .footer a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    color: #ccc;
-  }
-  
-  .footer .copyright {
-    font-size: 0.8rem;
-    margin-top: 2rem;
-  }
-  .dropdown-menu{
+    width: 300px;
+    max-width: 300px;
+}
+.dropdown-menu{
     left: -370%;
 }

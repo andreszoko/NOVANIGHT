@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+@ -2,86 +2,89 @@
 <html lang="en">
 
 <head>
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/sweetalert2.min.css">
     <link rel="stylesheet" href="css/Style_moshe.css">
 
-    <title>COMPRAS</title>
+    <title>Carrito Compras en NOVA night</title>
 </head>
 
 <body>
@@ -24,20 +24,21 @@
         <div class="container">
             <div class="row align-items-stretch justify-content-between">
                 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                    <a class="navbar-brand" href="#">NOVANIGHT</a>
-                    <img src="img/logotipo_novanight.png" height="70px" width="100px">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav ml-auto">
+                    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                        <a class="navbar-brand" href="#">
+                          <img src="img/logotipo_novanight.png" alt="Logo" height="70px" width="70px">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                          <ul class="navbar-nav ml-auto">
                             <li class="nav-item dropdown">
-                                <img src="img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
-                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false"></img>
-                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
-                                    <table id="lista-carrito" class="table">
+                              <img src="img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px" width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></img>
+                              <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                <!-- contenido del carrito -->
+                                   }                <table id="lista-carrito" class="table">
                                         <thead>
                                             <tr>
                                                 <th>Imagen</th>
@@ -52,7 +53,6 @@
                                     <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
                                     <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
                                         Compra</a>
-                                    <!-- contenido del carrito -->
                                 </div>
                             </li>
                         </ul>
@@ -61,6 +61,7 @@
             </div>
         </div>
     </header>
+
     <main>
         <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
             <h1 class="display-4 mt-4">Lista de Productos</h1>
@@ -70,45 +71,40 @@
         <div class="container" id="lista-productos">
             <!-- todo el producto ven aqui -->
         </div>
-    
     </main>
-    <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h5>Información</h5>
-              <ul>
-                <li><a href="#">Acerca de nosotros</a></li>
-                <li><a href="#">Política de privacidad</a></li>
-                <li><a href="#">Términos y condiciones</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <h5>Enlaces útiles</h5>
-              <ul>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Soporte técnico</a></li>
-                <li><a href="#">Contacto</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <h5>Redes sociales</h5>
-              <ul>
-                <li><a href="https://www.youtube.com/watch?v=CaX9IeeCM6k&t=16s" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                <li><a href="https://www.youtube.com/watch?v=CaX9IeeCM6k&t=16s" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-                <li><a href="https://www.youtube.com/watch?v=CaX9IeeCM6k&t=16s" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-              </ul>
-            </div>
-          </div>
-          <p class="copyright">© 2023 Novanight. Todos los derechos reservados.</p>
-        </div>
-      </footer>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/sweetalert2.min.js"></script>
     <script src="js/carrito.js"></script>
     <script src="js/pedido.js"></script>
 
-</body> 
-
+</body>
+<footer class="footer">
+    <div class="container">
+      <h5>Información de contacto</h5>
+      <ul>
+        <li><a href="#">Teléfono: 123-456-7890</a></li>
+        <li><a href="#">Correo electrónico: ejemplo@example.com</a></li>
+        <li><a href="#">Dirección: Calle ejemplo 123, Ciudad ejemplo</a></li>
+      </ul>
+      <p class="copyright">Copyright 2023. Todos los derechos reservados.</p>
+      <div class="social-media">
+        <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.1141431299134!2d-74.03326322526082!3d4.7502004952249886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8580ade6b68d%3A0x977e3d01c6d9bfec!2zQ2wuIDE3MiAmIENyYS4gOGgsIFVzYXF1w6luLCBCb2dvdMOh!5e0!3m2!1ses!2sco!4v1728435863773!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div id="mapa" style="width: 100%; height: 200px;"></div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API"></script>
+      <script>
+        function initMap() {
+          var mapa = new google.maps.Map(document.getElementById('mapa'), {
+            center: {lat: -34.6037, lng: -58.3816},
+            zoom: 13
+          });
+        }
+      </script>
+    </div>
+  </footer>
 </html>

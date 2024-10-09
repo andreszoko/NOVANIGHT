@@ -135,6 +135,7 @@ class Carrito {
     //Mostrar los productos guardados en el LS en compra.html
     leerLocalStorageCompra(){
         let productosLS;
+        
         productosLS = this.obtenerProductosLocalStorage();
         productosLS.forEach(function (producto){
             const row = document.createElement('tr');
@@ -143,11 +144,11 @@ class Carrito {
                     <img src="${producto.imagen}" width=100>
                 </td>
                 <td>${producto.titulo}</td>
-                <td>${producto.precio}</td>
+                <td>${(producto.precio).toLocaleString('es-PE', { minimumFractionDigits: 3 })}</td>
                 <td>
-                    <input type="number" class="form-control cantidad" min="1" value=${producto.cantidad}>
+                    <input type="number" class="form-control cantidad" min="1" value=${(producto.cantidad)}>
                 </td>
-                <td id='subtotales'>${producto.precio * producto.cantidad}</td>
+                <td id='subtotales'>${(producto.precio*producto.cantidad).toLocaleString('es-PE', { minimumFractionDigits: 3 })}</td>
                 <td>
                     <a href="#" class="borrar-producto fas fa-times-circle" style="font-size:30px" data-id="${producto.id}"></a>
                 </td>
@@ -202,16 +203,16 @@ class Carrito {
         productosLS = this.obtenerProductosLocalStorage();
         for(let i = 0; i < productosLS.length; i++){
             let element = Number(productosLS[i].precio * productosLS[i].cantidad);
-            total = total + element;
+            total = (total + element);
             
         }
         
-        igv = parseFloat(total * 0.18).toFixed(2);
-        subtotal = parseFloat(total-igv).toFixed(2);
+        igv =(total * 0.18).toLocaleString('es-PE', { minimumFractionDigits: 3 });
+        subtotal = (total -(total * 0.18)).toLocaleString('es-PE', { minimumFractionDigits: 3 });
 
-        document.getElementById('subtotal').innerHTML = "S/. " + subtotal;
-        document.getElementById('igv').innerHTML = "S/. " + igv;
-        document.getElementById('total').value = "S/. " + total.toFixed(2);
+        document.getElementById('subtotal').innerHTML = "$ " + subtotal;
+        document.getElementById('igv').innerHTML = "$ " + igv;
+        document.getElementById('total').value = "$ " + total.toLocaleString('es-PE', { minimumFractionDigits: 3 });;
     }
 
     obtenerEvento(e) {
