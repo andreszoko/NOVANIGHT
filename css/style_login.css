@@ -10,7 +10,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(img/3.jpg);
+    font-family: 'Roboto', sans-serif; /* Asegúrate de incluir la fuente que estás usando */ 
+    background-image: url(/img/3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
