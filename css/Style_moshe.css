@@ -9,6 +9,11 @@ header {
   color: #fff;
   padding: 1em;
   text-align: center;
+  transition: background-color 0.3s ease; /* Transición para el fondo */
+}
+
+header:hover {
+  background-color: #444; /* Cambia el color de fondo al pasar el mouse */
 }
 
 header nav {
@@ -26,11 +31,21 @@ header nav ul {
 
 header nav ul li {
   margin-right: 20px;
+  transition: transform 0.3s ease; /* Transición para el efecto de escala */
+}
+
+header nav ul li:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
 }
 
 header nav a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s ease; /* Transición para el color del texto */
+}
+
+header nav a:hover {
+  color: #ffa500; /* Cambia el color del texto al pasar el mouse */
 }
 
 main {
@@ -42,11 +57,33 @@ main {
 
 main h1 {
   font-size: 36px;
+  transition: transform 0.3s ease; /* Transición para el título */
 }
+
+main h1:hover {
+  transform: translateY(-5px); /* Mueve el título hacia arriba al pasar el mouse */
+}
+
 #carrito {
-    width: 300px;
-    max-width: 300px;
+  width: 300px;
+  max-width: 300px;
 }
-.dropdown-menu{
-    left: -370%;
+
+.dropdown-menu {
+  left: -370%;
+  transition: left 0.3s ease; /* Transición para el menú desplegable */
+}
+
+/* Added footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  clear: both; /* Add this to ensure the footer clears any floating elements */
+  transition: background-color 0.3s ease; /* Transición para el fondo */
+}
+
+footer:hover {
+  background-color: #444; /* Cambia el color de fondo al pasar el mouse */
 }
