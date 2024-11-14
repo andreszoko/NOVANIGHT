@@ -1,141 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Productos</title>
-  <style>
-    /* Estilos para los productos */
-    .producto {
-      border: 1px solid #ccc;
-      padding: 20px;
-      margin: 20px;
-      width: 200px;
-      float: left;
-      text-align: center;  /* Alinear el texto y los elementos dentro de cada producto */
-      position: relative;
-      overflow: hidden;  /* Oculta cualquier cosa que sobresalga del contenedor */
-    }
-
-    /* Estilos para las imágenes de los productos */
-    .producto img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover; /* Para que las imágenes se ajusten sin distorsionarse */
-      transition: transform 0.3s ease;  /* Transición suave para el efecto de agrandamiento */
-    }
-
-    /* Efecto cuando el mouse pasa sobre el producto */
-    .producto:hover img {
-      transform: scale(1.1);  /* Agranda la imagen un 10% */
-    }
-
-    /* Estilos para los títulos y texto de los productos */
-    .producto h2 {
-      font-size: 18px;
-      margin: 10px 0;
-    }
-
-    .producto p {
-      font-size: 16px;
-      margin: 10px 0;
-    }
-
-    .producto ul {
-      padding-left: 20px;
-    }
-
-    .producto ul li {
-      font-size: 14px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del producto</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Productos</h1>
-  <div id="productos"></div>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    const productos = [
-      {
-        "id": 1,
-        "marca": "HP PAVILION",
-        "imagen": "img/hp1.jpg",
-        "precio": "500.000",
-        "detalles": ["8 GB RAM", "COLOR PLATEADO", "256 GB DISCO SSD"]
-      },
-      {
-        "id": 2,
-        "marca": "ACER",
-        "imagen": "img/acer.jpg",
-        "precio": "300.000",
-        "detalles": ["16 GB RAM", "COLOR NEGRO", "1 TB DD"]
-      },
-      {
-        "id": 3,
-        "marca": "LENOVO",
-        "imagen": "img/lenovo.jpg",
-        "precio": "400.000",
-        "detalles": ["4 GB RAM", "COLOR PLATEADO", "1 TB DD"]
-      },
-      {
-        "id": 4,
-        "marca": "APPLE",
-        "imagen": "img/apple.jpg",
-        "precio": "590.000",
-        "detalles": ["8 GB RAM", "COLOR GOLD", "128 GB DD"]
-      },
-      {
-        "id": 5,
-        "marca": "HUAWEI",
-        "imagen": "img/huawei.jpg",
-        "precio": "576.000",
-        "detalles": ["8 GB RAM", "COLOR NEGRO", "256 GB DD"]
-      },
-      {
-        "id": 6,
-        "marca": "SAMSUNG",
-        "imagen": "img/samsung.jpg",
-        "precio": "259.000",
-        "detalles": ["4 GB RAM", "COLOR BLANCO", "64 GB DD"]
-      },
-      {
-        "id": 7,
-        "marca": "LG",
-        "imagen": "img/lg.jpg",
-        "precio": "429.000",
-        "detalles": ["8 GB RAM", "COLOR PLATEADO", "256 GB DD"]
-      },
-      {
-        "id": 8,
-        "marca": "ADVANCE",
-        "imagen": "img/advance.jpg",
-        "precio": "8.600.600",
-        "detalles": ["3 GB RAM", "COLOR NEGRO", "64 GB DD"]
-      },
-      {
-        "id": 9,
-        "marca": "DELL",
-        "imagen": "img/dell.jpg",
-        "precio": "539.000",
-        "detalles": ["8 GB RAM", "COLOR NEGRO", "1 TB DD"]
-      }
-    ];
-
-    // Generamos el HTML dinámicamente para cada producto
-    $.each(productos, function(index, producto) {
-      const html = `
-        <div class="producto">
-          <img src="${producto.imagen}" alt="${producto.marca}">
-          <h2>${producto.marca}</h2>
-          <p>Precio: ${producto.precio}</p>
-          <ul>
-            ${producto.detalles.map(detalle => `<li>${detalle}</li>`).join('')}
-          </ul>
+    <header>
+        <!-- Cabecera de la página -->
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="" alt="" id="producto-imagen">
+                    <img src="/img/3.jpg" alt="" id="producto-imagen">
+                </div>
+                <div class="col-md-6">
+                    <h1 id="producto-nombre"></h1>
+                    <p id="producto-descripcion"></p>
+                    <p id="producto-precio"></p>
+                    <form>
+                        <!-- Opciones del producto -->
+                        <label for="color">Color:</label>
+                        <select id="color" name="color">
+                            <option value="">Seleccione un color</option>
+                            <!-- Opciones de color -->
+                        </select>
+                        <br>
+                        <label for="talla">Talla:</label>
+                        <select id="talla" name="talla">
+                            <option value="">Seleccione una talla</option>
+                            <!-- Opciones de talla -->
+                        </select>
+                        <br>
+                        <button class="btn btn-primary" id="agregar-al-carrito">Agregar al carrito</button>
+                    </form>
+                </div>
+            </div>
         </div>
-      `;
-      $('#productos').append(html);
-    });
-  </script>
-</body>
-</html>
